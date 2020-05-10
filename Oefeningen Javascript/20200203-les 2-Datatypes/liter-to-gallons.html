@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var liter_to_gallons = 0.264172052;
+
+        var inhoud_in_liter = prompt("Hoeveel liter omzetten naar gallons?");
+        console.log(+typeof inhoud_in_liter);
+
+        var inhoud_in_gallons = parseFloat(inhoud_in_liter) * liter_to_gallons;
+        console.log(+typeof inhoud_in_gallons);
+
+        document.write("<h1>Inhoudsomzetting</h1>")
+        document.write("<p>\"" + inhoud_in_liter + " liter\" omgezet naar gallons is: \"" + inhoud_in_gallons.toFixed(2) + "\"</p>");
+    </script>
+</body>
+
+</html>

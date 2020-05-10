@@ -1,0 +1,16 @@
+Toon een alert: Loonberekening
+Maak ook een h1 met dezelfde tekst.
+
+Vraag aan de gebruiker: Wil je je loon berekenen? 
+Mogelijke antwoorden zijn: annuleren of ok
+Bewaar dit in een var, dus:
+var antwoord=confirm(...
+Schrijf in het document: Jouw antwoord was: xyz
+Log dit ook in de console.
+
+Vraag aan de gebruiker: Hoeveel wil je netto verdienen per jaar?
+Standaard staat 1000 ingevuld.
+Bereken zijn vakantiegeld: 50% van een maandloon.
+Schrijf in het document: 
+Als je 1000.00 per jaar verdient, dan krijg je 41.67. 
+Met je vakantiegeld erbij geteld zal je dan 1041.67 verdienen

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var persoon1 = ["Jan", "man"];
+        var persoon2 = ["Hilde", "vrouw"];
+
+        function haalAanspreektitelOp(geslacht) {
+            var aanspreektitel = "";
+            if (geslacht === "man") {
+                aanspreekTitel = "meneer"
+            } else {
+                aanspreekTitel = "mevrouw"
+            }
+            return aanspreekTitel;
+        }
+
+        document.write("Hallo " + haalAanspreektitelOp(persoon1[1]) + " " + persoon1[0]);
+        document.write("<br>Hallo " + haalAanspreektitelOp(persoon2[1]) + " " + persoon2[0]);
+
+
+        // function haalAanspreektitelOp(manVrouw) {
+        //     var geslacht = manVrouw;
+        //     if (manVrouw[1] == 'man') {} else if (manVrouw[1] == 'vrouw') {}
+        //     return geslacht;
+        // }
+
+        // var persoon1 = ['Jan', 'man'];
+        // var persoon2 = ['Hilde', 'vrouw'];
+        // haalAanspreektitelOp(persoon1);
+        // haalAanspreektitelOp(persoon2);
+
+        // // document.write hier of in de function?
+        // document.write('<br>Hallo meneer ' + persoon1[0]);
+        // document.write('<br>Hallo mevrouw ' + persoon2[0]);
+    </script>
+</body>
+
+</html>

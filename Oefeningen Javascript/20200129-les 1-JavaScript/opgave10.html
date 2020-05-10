@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Opgave 10</title>
+</head>
+<body>
+    <div>
+        <h1>Loonberekening</h1>
+        <script>
+            //Arno De Koninck   30-1-2020
+            //Declarations and the initial pop up windows to confirm user acceptance
+            //Note: the "let" I use as variables do the same as "var" (we'll see "let" in JavaScript6 in a later class)
+            alert("Loonberekening");
+
+            let accept              =         confirm("Wil je je loon berekenen?");
+            let netto               =         "";
+            let vakantiegeld        =         0;
+            let totaal              =         0;
+
+            console.log("acceptance ="+ accept);
+            document.write("Jouw antwoord was: "+accept);
+            //parseInt() to make sure the variable containts an Int(eger)(number) rather than a string(text) so we can use Math on it
+            netto = parseInt(prompt("<br>Hoeveel wil je netto verdienen?", "1000"));
+            
+            //Monthly wage is Netto wage(Yearly) devided by 12 (12 months), and the vacation allowance is 50% of this result. (50% is the same as multiplying by 0.5)
+            vakantiegeld = (netto/12)*0.5;
+            totaal = netto + vakantiegeld;
+
+            //Don't forget .toFixed(number of decimals) to get the proper number of decimals for pricing.
+            document.write("<br>Als je jaarlijks "+ netto+" Euro Netto "+" verdient, dan krijg je "+vakantiegeld.toFixed(2)+" Euro vakantiegeld.");
+            document.write("<br>Met je vakantiegeld erbij geteld zal je dan "+totaal.toFixed(2)+" Euro verdienen.");
+
+        </script>
+        <p>Arno De Koninck 30-1-2020</p>
+    </div>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+    </style>
+</body>
+</html>

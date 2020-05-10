@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var auto = {
+            type: 'Fiat',
+            model: '500',
+            kleur: 'wit'
+        }
+        console.log(auto)
+
+        var boek = {
+            titel: 'JavaScript, the right way',
+            jaar: 2012,
+            uitgever: 'stherightway.co'
+        }
+        console.log(boek)
+
+        document.write("De titel is " + boek.titel);
+        document.write("<p>Het jaar is " + boek.jaar + "</p>");
+        document.write("<p>De uitgever is " + boek.uitgever + "</p>");
+
+        var studenten = new Array();
+        studenten.push({
+            id: 1,
+            naam: 'Jozef',
+            email: 'Jozef@live.nl',
+            opleiding: 'Applicatie- en media ontwikkelaar'
+        });
+        document.write(studenten[0].naam);
+
+        var laptops = [];
+        laptops['macbook'] = {
+            'model': 'air',
+            'voorraad': 2000,
+            'prijs': 1090
+        }
+
+        laptops['asusbook'] = {
+            'model': 'wind',
+            'voorraad': 1000,
+            'prijs': 990
+        }
+        laptops['dellbook'] = {
+            'model': 'fire',
+            'voorraad': 987,
+            'prijs': 890
+        }
+
+        document.write('<br/>Opgave 42: laptops array aangemaakt');
+        document.write("<br/>laptops: " + laptops);
+
+        document.write('<br/>Opgave 43: laptops array uitgebreid');
+
+        document.write('<br/>Opgave 43: De laptops array heeft ' + laptops.length + ' elementen');
+    </script>
+</body>
+
+</html>

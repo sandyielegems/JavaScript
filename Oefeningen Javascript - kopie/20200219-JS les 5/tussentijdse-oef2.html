@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var geboortejaar = prompt("Geef je geboortejaar in", "1979");
+        var vandaag = new Date();
+        var jaartal = vandaag.getFullYear();
+        console.log(jaartal);
+        var meerderjarig = (jaartal - geboortejaar);
+        console.log(meerderjarig);
+
+
+        if (geboortejaar == null) {
+            document.write('u heeft geannuleerd');
+        } else if (geboortejaar.jaar == 0) {
+            document.write('U hebt niks ingegeven');
+        } else if (isNaN(geboortejaar)) {
+            document.write('Dit is geen getal');
+        } else {
+            if (geboortejaar >= 1900 && geboortejaar <= jaartal) {
+                document.write('Je bent dit jaar ' + meerderjarig + ' jaar oud. Je mag deelnemen aan de spelen van de Nationale Loterij');
+            }
+            // else {
+            //     (meerderjarig > 18)
+            //     document.write('Om deel te nemen aan de spelen van de Nationale Loterij moet je minimum 18 jaar oud zijn.');
+            // }
+        }
+    </script>
+</body>
+
+</html>

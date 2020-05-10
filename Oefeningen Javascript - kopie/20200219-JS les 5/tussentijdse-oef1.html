@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var geboortejaar = prompt('Geef je geboortejaar in', '1979');
+        var jaar = prompt('Geef het huidig jaartal in', '2020');
+
+        var meerderjarig = (jaar - geboortejaar);
+        console.log(meerderjarig);
+
+        if (geboortejaar == null) {
+            document.write('u heeft geannuleerd');
+        } else if (geboortejaar.jaar == 0) {
+            document.write('U hebt niks ingegeven');
+        } else if (isNaN(geboortejaar)) {
+            document.write('Dit is geen getal');
+        } else {
+            if (meerderjarig >= 18) {
+                document.write('Vanaf nu mag, kan en beslis ik alles, binnen de wettelijke grenzen.');
+            } else {
+                document.write('Gelukkig heb ik mijn ouders die alles voor me regelen.');
+            }
+        }
+    </script>
+</body>
+
+</html>

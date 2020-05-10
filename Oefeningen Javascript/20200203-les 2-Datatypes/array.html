@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        //Array - werkwijze 1
+        var weekdag = new Array();
+        weekdag[0] = "maandag";
+        weekdag[1] = "dinsdag";
+        weekdag[2] = "woensdag";
+        weekdag[3] = "donderdag";
+        weekdag[4] = "vrijdag";
+        weekdag[5] = "zaterdag";
+        weekdag[6] = "zondag";
+        console.log(weekdag);
+
+        var resultaat = weekdag[0];
+        console.log(resultaat);
+
+        //Array - werkwijze 2
+        var weekdag2 = new Array("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag");
+
+        //Array - werkwijze 3
+        var weekdag3 = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+
+        document.write("Vandaag is het: " + weekdag[0] + ".");
+
+        var maanden = new Array();
+        maanden[0] = "januari";
+        maanden[1] = "februari";
+        maanden[2] = "maart";
+        maanden[3] = "april";
+        maanden[4] = "mei";
+        maanden[5] = "juni";
+        maanden[6] = "juli";
+        maanden[7] = "augustus";
+        maanden[8] = "september";
+        maanden[9] = "oktober";
+        maanden[10] = "november";
+        maanden[11] = "december";
+        console.log(maanden);
+
+        document.write("<p>Deze maand is het: " + maanden[1] + ".</p>");
+
+        // alle uren in een dag 1-12 > als getal, niet als string!
+        var uur = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+        console.log(uur);
+        document.write("<p>Het is nu: " + uur[2] + " uur.</p>");
+
+        var verschillendeDatatypes = [1, "drie", true];
+
+        //wat is het type van 'drie' > string, number, ...
+        console.log(typeof verschillendeDatatypes[1]);
+
+        var namen1 = ["Jan"];
+        var namen2 = namen1;
+        namen1[0] = "Piet";
+        console.log(namen1);
+        console.log(namen2);
+
+        var studenten = new Array("Zakaria", "Albert", "Hamsa", "Mike", "Pieter");
+        document.write("<p>Opgave 24: Studenten: " + studenten);
+        console.log("Studenten: " + studenten);
+
+        var team = new Array("Zakaria", "Albert", "Hamsa", "Mike", "Pieter");
+        document.write("<p>Opgave 25: Team: " + team);
+
+        team[0] = "Umut";
+        console.log(team);
+
+        //var arraysplice = team.splice(0, 3);
+        //console.log(arraysplice);
+
+        //var klas = studenten.splice(2, 4);
+        //console.log("Studenten: " + klas);
+
+        //studenten.sort();
+        //studenten.reverse();
+        // console.log(studenten);
+
+        var index = studenten.indexOf("Mike");
+        console.log(index);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var nu = new Date();
+        //parseInt: getal als geheel beschouwen, belangrijk voor getallen met 2 cijfers
+        var uren = parseInt(prompt("Geef het uur in"));
+        //uur van de computer 
+        // var uren = nu.getHours();
+
+        document.write("Het is nu " + uren + " uur.");
+        console.log(nu);
+
+        if (uren > 0 && uren < 7) {
+            document.write("<br>Goeienacht");
+        } else if (uren > 7 && uren < 11) {
+            document.write("<br>Goeiemorgen");
+        } else if (uren > 11 && uren < 18) {
+            document.write("<br>Goeiemiddag");
+        } else {
+            document.write("<br>Goeie avond");
+        }
+    </script>
+</body>
+
+</html>

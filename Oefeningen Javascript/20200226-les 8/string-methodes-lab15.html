@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+    <script>
+        // github !!!
+        var doc = 'Dit document is een lang document maar ook een simpel document';
+
+        function vervangen(doc, woord, nieuwewoord) {
+            if (doc.indexOf(woord) != -1) {
+                deel1 = doc.substr(0, doc.indexOf(woord) + nieuwewoord);
+                deel2 = doc.substring(doc.indexOf(woord) + woord.length, doc.lenght)
+                doc = deel1 + deel2;
+            }
+            document.write(doc);
+        }
+    </script>
+
+
+
+</body>
+
+<p>Dit document is een lang document maar ook een simpel document</p>
+<form name="form">
+    <input type="text" name="zoek" />
+    <input type="text" name="vervang" />
+    <input type="button" name="button" value=" Vervang" onclick="vervangen(doc,document.form.zoek.value,
+document.form.vervang.value);" />
+
+</form>
+
+</html>

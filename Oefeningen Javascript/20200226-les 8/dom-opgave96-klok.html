@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DOM events</title>
+    <script>
+        document.write(
+            '<form name="klok"> ' +
+            '<input type="text" name="display" size="4" style="background-color:pink;font-size:60px"></form>');
+
+        var alterneren = 0;
+        // alterneren = 0 > false
+
+        function showklok() {
+            var nu = new Date();
+            var uur = nu.getHours();
+            var min = nu.getMinutes();
+            var sec = nu.getSeconds();
+            min = ((min < 10) ? "0" : "") + min;
+            // min < 10 = de 0 voor de minuten indien 1 getal
+            sec = ((sec < 10) ? "0" : "") + sec;
+
+            if (alterneren) {
+                document.klok.display.value = uur + ":" + min + ":" + sec;
+                alterneren = 0;
+            } else {
+                document.klok.display.value = uur + " " + min + " " + sec;
+                alterneren = 1;
+                // alterneren = 1 > true , 0 > false > pinken van de ':'
+
+            }
+
+            setTimeout("showklok()", 1000);
+        }
+    </script>
+</head>
+
+<body onload="showklok();">
+
+</body>
+
+</html>

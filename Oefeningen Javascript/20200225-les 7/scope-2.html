@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var variabeleNaam = "JavaScript";
+        // globale variabele
+
+        function scope() {
+            var variabeleNaam = "localscope";
+            // lokale variabele
+
+            document.write("variabeleNaam in function: " + variabeleNaam + "<br>");
+            eersteKeer = "globalscope";
+            console.log(variabeleNaam);
+
+        }
+        scope();
+
+        function tweedeFunctie() {
+            console.log(variabeleNaam);
+        }
+
+        tweedeFunctie();
+
+        document.write("variabeleNaam in hoofdscript: " + variabeleNaam + "<br>");
+        document.write("eersteKeer in hoofdscript: " + eersteKeer + "<br>");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var naam1 = "javascript";
+        var naam2 = prompt("Wat ben je aan het leren?", "javascript");
+
+        if (naam1 == naam2) {
+            document.write('<p>Ze zijn gelijk</p>');
+        }
+        if (naam1 === naam2) {
+            document.write('<p>Ze zijn strict identiek</p>');
+        }
+
+        var inhoud1 = 5
+        var inhoud2 = prompt("Hoeveel is 3+2");
+
+        if (inhoud1 == inhoud2) {
+            document.write("<p>De inhoud is identiek</p>");
+        }
+        if (inhoud1 === inhoud2) {
+            document.write("<p>De inhoud is identiek en van hetzelfde type</p>");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var tekst = 'Hij lijkt een beetje op Nelson Mandela.';
+        // lengte = tekst.length;
+        // spaties = 0;
+        // document.write('<br>');
+        // console.log(lengte);
+
+        // for (i = 0; i < lengte; i++) {
+        //     teken = tekst.charAt(i);
+        //     document.write(teken);
+        //     if (teken == ' ') {
+        //         spaties++;
+        //     }
+        // }
+        // document.write('<br>Tekst bevat ' + spaties + ' spaties')
+
+        var tekst = 'hij lijkt een beetje op Nelson Mandela.';
+        lengte = tekst.length;
+        letter_a = 0;
+        letter_e = 0;
+        letter_i = 0;
+        letter_o = 0;
+        letter_u = 0;
+
+        document.write('<br>');
+        console.log(lengte);
+
+        for (i = 0; i < lengte; i++) {
+            teken = tekst.charAt(i);
+            document.write(teken);
+            if (teken == 'a') {
+                letter_a++;
+            }
+            if (teken == 'e') {
+                letter_e++;
+            }
+            if (teken == 'i') {
+                letter_i++;
+            }
+            if (teken == 'o') {
+                letter_o++;
+            }
+            if (teken == 'u') {
+                letter_u++;
+            }
+        }
+        document.write('<br>Aantal a\'s: ' + letter_a);
+        document.write('<br>Aantal e\'s: ' + letter_e);
+        document.write('<br>Aantal i\'s: ' + letter_i);
+        document.write('<br>Aantal o\'s: ' + letter_o);
+        document.write('<br>Aantal u\'s: ' + letter_u);
+    </script>
+</body>
+
+</html>

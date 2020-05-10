@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var studenten = new Array();
+        studenten[0] = new Array('Jan Janssens', 'Piet Peters', 'An Andersen');
+        studenten[1] = new Array('jan.janssens@hotmail.com', 'piet.peters@gmail.com', 'an.andersen@outlook.com');
+
+        document.write("<br />De e-mail van " + studenten[0][0] + " is: " + studenten[1][0]);
+        document.write("<br />De e-mail van " + studenten[0][1] + " is: " + studenten[1][1]);
+        document.write("<br />De e-mail van " + studenten[0][2] + " is: " + studenten[1][2]);
+
+
+        var team = new Array();
+        team[1] = new Array();
+        team[2] = new Array();
+        team[3] = new Array();
+
+        team[1][1] = 'Jan Janssens';
+        team[1][2] = 'jan.janssens@hotmail.com';
+        team[2][1] = 'Piet Peters';
+        team[2][2] = 'piet.peters@gmail.com';
+        team[3][1] = 'An Andersen';
+        team[3][2] = 'an.andersen@outlook.com';
+
+        document.write("<br/>De e-mail van " + team[1][1] + " is: " + team[1][2]);
+        document.write("<br />De e-mail van " + team[2][1] + " is: " + team[2][2]);
+        document.write("<br/>De e-mail van " + team[3][1] + " is: " + team[3][2]);
+    </script>
+
+</body>
+
+</html>

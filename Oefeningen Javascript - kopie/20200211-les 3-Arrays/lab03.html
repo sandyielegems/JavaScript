@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var testarray = new Array("een", "twee", 3, "vier");
+        testarray.push(5);
+        document.write("<br/>Stap 3: " + testarray)
+        console.log(testarray);
+        console.log(typeof testarray[4]);
+
+        testarray.pop();
+        console.log(testarray);
+
+        testarray.unshift('nul');
+        delete testarray[0];
+        console.log(testarray);
+
+        console.log(typeof testarray[0]);
+
+        testarray.shift();
+        console.log(testarray);
+
+        testarray.splice(1, 1);
+        console.log(testarray);
+    </script>
+
+
+</body>
+
+</html>

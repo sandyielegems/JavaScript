@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Datatypes</title>
+</head>
+
+<body>
+
+    <script>
+        // typeof
+        var naam = "Carl";
+        var adres = "Kruislaan 111";
+        document.write("<br>Opgave 10: Datatype van naam is: " + typeof naam);
+
+        //boolean
+        var leerplichtig = true;
+        var volwassene = false;
+        document.write("<br>Opgave 11: Datatype van leerplichtig is: " + typeof leerplichtig);
+
+        //number (integer)
+        var temperatuur = -10;
+        document.write("<br>Opgave 12: Dataype van temperatuur is: " + typeof temperatuur);
+
+        // number (flooting-point)
+        var btw = 0.19 * 100;
+        document.write("<br>Opgave 13: Waarde van  btw is: " + btw);
+
+        // parseInt
+        var string = 33445;
+        var resultaat = parseInt(string);
+        document.write("<br>Opgave 14: parseInt(string) Resultaat is: " + typeof resultaat);
+
+        // parseFloat
+        var string2 = "3.3445";
+        var resultaat2 = parseFloat(string2);
+        document.write("<br>Opgave 15: parseFloat(string) Resultaat is: " + typeof resultaat2);
+
+        //parseIntFloat
+        var float = 3.3445;
+        var resultaat3 = parseInt(float);
+        document.write("<br>Opgave 16: parseInt(Float) Resultaat is: " + typeof resultaat3 + ", waarde is: " + resultaat3);
+
+        // float.toString
+        var float2 = 3.3445;
+        var resultaat4 = float.toString();
+        document.write("<br>Opgave 17: float.toString() Resultaat is: " + typeof resultaat4);
+
+        // float.toFixed()
+        var float3 = 3.33333;
+        var resultaat5 = parseFloat(float3.toFixed(2));
+        document.write("<br>Opgave 18: " + typeof resultaat5 + " - " + resultaat5);
+
+        // undefined = geen inhoud
+        var twee;
+        document.write("<br>Opgave 19: Datatype van twee is: " + typeof twee);
+
+        // NaN = not a number
+        var een = 1;
+        var drie = een * twee;
+        document.write("<br>Opgave 20: De waarde van drie is: " + drie);
+    </script>
+
+
+</body>
+
+</html>

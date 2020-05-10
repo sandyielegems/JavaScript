@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        function dagOmzetten(datum) {
+            var maanden = new Array('januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december');
+            var weekdag = new Array('zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag')
+            return (weekdag[datum.getDay()] + ' ' + datum.getDate() + ' ' + maanden[datum.getMonth()] + ' ' + datum.getFullYear());
+        }
+
+        function telDagenVerder(aantalDagen) {
+            var dag = 86400000;
+            var nieuweDatum = Date.now() + (dag * aantalDagen);
+            nieuweDatum = new Date(nieuweDatum);
+            var omgezetteDatum = dagOmzetten(nieuweDatum);
+            return omgezetteDatum
+        }
+
+        var dagenVerder = prompt('Hoeveel dagen wil je bij tellen?');
+
+        document.write("<p>Het is vandaag " + dagOmzetten(new Date()) + ". Binnen " + dagenVerder + " dagen is het " + telDagenVerder(dagenVerder) + ".</p>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

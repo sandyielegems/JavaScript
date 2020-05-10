@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var geboortedatum = new Date("1979-05-12T14:07:00");
+        console.log(geboortedatum);
+        document.write("Mijn geboortedatum is " + geboortedatum);
+
+        var vandaag = new Date();
+        var jaar = vandaag.getFullYear();
+        document.write("<br>" + jaar);
+        vandaag.setFullYear(2030);
+        jaar = vandaag.getFullYear();
+        document.write("<br>" + jaar);
+    </script>
+</body>
+
+</html>

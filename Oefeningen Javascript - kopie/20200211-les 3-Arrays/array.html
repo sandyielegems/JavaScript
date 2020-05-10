@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var weekdagen = new Array("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag");
+        console.log(weekdagen);
+        console.log(weekdagen[5]);
+
+        var weekdagenCopie = weekdagen;
+        //dezelfde inhoud, dus geen echte kopie
+        weekdagen.shift();
+        weekdagen.push('maandag');
+        console.log(weekdagen);
+        //splice vanaf positie 4 en lengte 2 items
+        var weekend = weekdagen.splice(4, 2);
+        console.log(weekend);
+        weekdagen.sort();
+        console.log(weekdagen);
+        weekdagen.reverse();
+        console.log(weekdagen);
+        var index = weekdagen.indexOf('woensdag');
+        console.log(index);
+        delete weekdagen[1];
+        console.log(weekdagen);
+        console.log(typeof weekend[0]);
+
+        var studenten = new Array('Jan', 'Jozef', 'Piet');
+        var plaats = studenten.indexOf('Jozef');
+        studenten.splice(plaats, 1);
+        console.log(studenten);
+
+        // echte kopie
+        var studentenKopie = studenten.slice();
+        studenten.push('Miet');
+        console.log(studenten);
+        console.log(studentenKopie);
+
+        // string maken van array 
+        var studentenString = studenten.join(" - ");
+        console.log(studentenString);
+
+        var mijnString = "Vandaag is het dinsdag";
+        var mijnArray = mijnString.split(" ");
+        console.log(mijnString);
+        console.log(mijnArray);
+    </script>
+
+</body>
+
+</html>

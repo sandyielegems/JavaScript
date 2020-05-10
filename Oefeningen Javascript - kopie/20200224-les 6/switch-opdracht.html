@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var datum = new Date();
+        var vandaag = datum.getDay();
+        var uur = datum.getHours();
+        document.write('Het is vandaag: ' + datum + " " + vandaag);
+
+        switch (vandaag) {
+            case 1:
+                document.write('<br>maandag is mijn eerste stagedag');
+                break;
+            case 2:
+                document.write('<br>dinsdag is mijn tweede stagedag');
+                break;
+            case 3:
+                document.write('<br>woensdag is mijn derde stagedag');
+                break;
+            case 4:
+                document.write('<br>donderdag is mijn vierde stagedag');
+                break;
+            case 5:
+                document.write('<br>vrijdag is mijn vijfde stagedag');
+                break;
+        }
+    </script>
+</body>
+
+</html>

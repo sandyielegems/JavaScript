@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var vandaag = new Date();
+        var jaar = vandaag.getFullYear();
+
+        var pensioen = parseInt(prompt("Wanneer ga je op pensioen?", 2044));
+        var aantal = (pensioen - jaar);
+
+        if (pensioen == null) {
+            document.write("u heeft geannuleerd");
+        } else if (pensioen.length == 0) {
+            document.write("u heeft niets ingegeven");
+        } else if (pensioen.length == 4) {
+            document.write("Geef een jaartal in met 4 cijfers");
+        } else {
+            document.write("Je gaat op pensioen binnen " + aantal + " jaar.)
+            }
+    </script>
+</body>
+
+</html>

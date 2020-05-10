@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var telefoonnummer = prompt('Geef je nr in cijfers in:', '0123456789');
+        var getal = ['nul', 'een', 'twee', 'drie', 'vier', 'vijf', 'zes', 'zeven', 'acht', 'negen'];
+        var lengte = telefoonnummer.length;
+
+        document.write('<p>' + telefoonnummer + '</p>');
+        document.write('Je telefoonnummer is: <br>');
+
+        for (i = 0; i < lengte; i++) {
+            document.write(getal[telefoonnummer.charAt(i)] + " ");
+        }
+    </script>
+</body>
+
+</html>

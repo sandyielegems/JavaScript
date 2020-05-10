@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var totaleJaar = new Array("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+        console.log(totaleJaar);
+
+        //slice >  verwijderd de elementen/posities niet - splice wel
+
+        var zomer = totaleJaar.slice(5, 8);
+        console.log(zomer);
+        document.write("Zomer: " + zomer);
+
+        var jaarZonderWinter = totaleJaar.slice();
+        jaarZonderWinter.shift();
+        jaarZonderWinter.shift();
+        jaarZonderWinter.pop();
+        console.log(jaarZonderWinter);
+        document.write("<p>Jaar zonder winter: " + jaarZonderWinter);
+
+        var nummerVanMaart = totaleJaar.indexOf("maart");
+        console.log(nummerVanMaart);
+        document.write("<p>Maart is de maand nr " + nummerVanMaart);
+    </script>
+</body>
+
+</html>

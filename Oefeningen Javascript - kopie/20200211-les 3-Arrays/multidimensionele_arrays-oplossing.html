@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var studenten = new Array();
+        studenten[0] = new Array();
+        studenten[0][0] = "Jan Jansen"
+        studenten[0][1] = "jan.jansen@hotmail.com"
+        studenten[1] = new Array("Piet Peters", "pietpeters@gmail.com");
+        studenten[2] = new Array("An Andersen", 'an43@outlook.com');
+
+        var studenten = [
+            ["Jan Jansen", "jan.jansen@hotmail.com"],
+            ["Piet Peters", "pietpeters@gmail.com"],
+            ["An Andersen", 'an43@outlook.com']
+        ];
+
+
+        document.write("<p>De email van " + studenten[0][0] + " is: " + studenten[0][1] + "</p>");
+        document.write("<p>De email van " + studenten[1][0] + " is: " + studenten[1][1] + "</p>");
+        document.write("<p>De email van " + studenten[2][0] + " is: " + studenten[2][1] + "</p>");
+
+
+
+
+        /*
+        Maak een tweedimensionale array met volgende inhoud:
+        Jan Jansen,jan.jansen@hotmail.com
+        Piet Peters,pietpeters@gmail.com
+        An Andersen,an43@outlook.com
+
+        Write in het document:
+        De email van Jan Jansen is: jan.jansen@hotmail.com
+        De email van Piet Peters is: pietpeters@gmail.com
+        De email van An Andersen is: an43@outlook.com
+
+        */
+    </script>
+</body>
+
+</html>

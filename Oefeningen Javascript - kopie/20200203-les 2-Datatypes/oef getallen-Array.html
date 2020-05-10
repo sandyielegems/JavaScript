@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var getallen = new Array();
+        getallen[0] = prompt("Vul  getal 1 in:");
+        getallen[1] = prompt("Vul  getal 2 in:");
+        getallen[2] = prompt("Vul  getal 3 in:");
+        getallen[3] = prompt("Vul  getal 4 in:");
+        getallen[4] = prompt("Vul  getal 5 in:");
+
+        console.log("Ingegeven getallen: " + getallen);
+        document.write("De array getallen bevatten: " + getallen);
+
+
+        //parseInt = op te zeggen dat het cijfers zijn en dus optellen of bewerkingen te kunnen doen
+        var som = parseInt(getallen[0]) + parseInt(getallen[1]) + parseInt(getallen[2]) + parseInt(getallen[3]) + parseInt(getallen[4]);
+        console.log("De som is: " + som);
+        document.write("<p>De som van deze getallen is: " + som + "</p>");
+    </script>
+</body>
+
+</html>

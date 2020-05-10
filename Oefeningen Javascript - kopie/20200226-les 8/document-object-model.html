@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="alert('De webpagina is volledig ingelezen')">
+    <img id="afbeelding" src="https://i.picsum.photos/id/0/200/300.jpg">
+
+    <script>
+        console.log(document.getElementById('afbeelding'));
+        document.getElementById('afbeelding').src = "https://i.picsum.photos/id/1/200/300.jpg"
+            // SOURCE > src !!! volgorde letters
+
+        function zegHi() {
+            alert('Hi!');
+        }
+        setTimeout("zegHi()", 2000);
+    </script>
+</body>
+
+</html>
