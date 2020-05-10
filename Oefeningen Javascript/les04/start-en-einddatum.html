@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var eersteSchooldag = new Date(2020,0,20);
+        var laatsteSchooldag = new Date(2020,05,30);
+        
+        document.write('<p>De eerste schooldag was : ' + eersteSchooldag +'</p>');
+        document.write('<p>De laatste schooldag was : ' + laatsteSchooldag +'</p>');
+
+        var verschil=laatsteSchooldag - eersteSchooldag;
+        var eenDag= 86400000;
+        var aantalDagen=verschil/eenDag;
+        document.write('<p>Aantal dagen opleiding : ' + aantalDagen.toFixed(0) +'</p>');
+    </script>
+</body>
+</html>

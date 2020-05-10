@@ -1,0 +1,28 @@
+<!DOCTYPE html> <html lang="nl"> 
+<head> 
+	<meta http-equiv="Content-Type" 
+	content="text/html; 
+	charset=UTF-8"> 
+	<title>if-opdracht</title> 
+</head> 
+<body> 
+	<script> 
+		var dag=new Date();
+		var tijd=dag.getHours();
+		document.write("<p>Het is nu " + tijd + " uur.</p>");
+		if(tijd > 0 && tijd <=7 ){
+			document.write("<p>Goeienacht!</p>");
+		}
+		else if(tijd> 7 && tijd <= 11){
+			document.write("<p>Goeiemorgen</p>");
+		}
+		else if(tijd> 11 && tijd <= 18){
+			document.write("<p>Goeiemiddag</p>");
+		}
+		else {
+			document.write("<p>Goeiemavond</p>");
+		}
+
+	</script> 
+</body> 
+</html> 

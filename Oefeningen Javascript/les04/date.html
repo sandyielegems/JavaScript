@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vandaag = new Date();
+        document.write('<br />Opgave 46: ' + vandaag);
+
+        console.log(Date.now());
+        var eenDag=1000*60*60*24;
+        console.log(eenDag);
+        var nu=Date.now();
+        var morgen = new Date(nu+eenDag);
+        console.log(morgen);
+
+
+        var schooljaar = new Date("2014-09-04");
+        console.log(schooljaar);
+// met tijd
+        var wintertijd = new Date("2014-10-28T03:00:00");
+        document.write("<br />Opgave 48: Begin wintertijd is: " + wintertijd);
+
+        var geboortedatum = new Date("1999-12-25T12:00:15");
+        document.write(geboortedatum);
+
+        var beginSchooldag = new Date(2020,1,10,8,30);
+        console.log(beginSchooldag);
+        var nu = Date.now();
+        console.log(nu);
+        console.log(((nu -beginSchooldag)/eenDag).toFixed(0))
+
+        </script>
+</body>
+</html>

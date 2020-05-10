@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;
+    charset=UTF-8" />
+</head>
+
+<body>
+    <script>
+    var variabeleNaam = "JavaScript";
+
+    function scope() {
+        var variabeleNaam = "localscope";
+        document.write("variabeleNaam in function: " + variabeleNaam + "<br>");
+        eersteKeer = "globalscope";
+    }
+    scope();
+    document.write("variabeleNaam in hoofdscript: " + variabeleNaam + "<br>");
+    document.write("eersteKeer in hoofdscript: " + eersteKeer + "<br>");
+    </script>
+</body>
+
+</html>

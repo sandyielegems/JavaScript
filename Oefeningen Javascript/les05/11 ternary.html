@@ -1,0 +1,25 @@
+<html lang="nl">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>ternary</title>
+</head>
+<body>
+   <h3>Ternary</h3>
+   <script>
+       var leeftijd=18;
+       var leerplichtig= (leeftijd <17 ? true : false);
+       alert('U bent leerplichtig is: ' + leerplichtig);
+       
+       var postcode = prompt('Wat is je postcode?');
+       //alert((postcode.toUpperCase() == '1010ST' ?  ' Kans op de Nationale Postcode Loterij is 90% ' : 'Kans op de Nationale Postcode Loterij is 0,069%'));
+
+       //var kansLoterij= (postcode.toUpperCase() == '1010ST' ? "90%" : "0,069%" );
+       //alert("Kans op de Nationale Postcode Loterij is " + kansLoterij);
+
+       postcode.toUpperCase() == '1010ST' ? alert('Kans op de Nationale Postcode Loterij is 90%') : alert('Kans op de Nationale Postcode Loterij is 0,069%');
+
+
+       
+   </script>
+</body>
+</html>

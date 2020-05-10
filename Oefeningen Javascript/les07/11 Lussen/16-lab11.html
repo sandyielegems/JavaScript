@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var telefoonnummer = prompt('Geef je nr in cijfers in:');
+    var getal = ['nul', 'een', 'twee', 'drie', 'vier', 'vijf', 'zes', 'zeven', 'acht', 'negen'];
+    var lengte = telefoonnummer.length;
+    document.write('<p>' + telefoonnummer + '</p>');
+    document.write('Je telefoonnummer is: <br>');
+    for (i = 0; i < lengte; i++) {
+        var nummerNaarTekst = "";
+        if (telefoonnummer.charAt(i) == 0) {
+            nummerNaarTekst = getal[0];
+        }
+        else if (telefoonnummer.charAt(i) == 1) {
+            nummerNaarTekst = getal[1];
+        }
+        else if (telefoonnummer.charAt(i) == 2) {
+            nummerNaarTekst = getal[2];
+        }
+        else if (telefoonnummer.charAt(i) == 3) {
+            nummerNaarTekst = getal[3];
+        }
+        else if (telefoonnummer.charAt(i) == 4) {
+            nummerNaarTekst = getal[4];
+        }
+        else if (telefoonnummer.charAt(i) == 5) {
+            nummerNaarTekst = getal[5];
+        }
+        else if (telefoonnummer.charAt(i) == 6) {
+            nummerNaarTekst = getal[6];
+        }
+        else if (telefoonnummer.charAt(i) == 7) {
+            nummerNaarTekst = getal[7];
+        }
+        else if (telefoonnummer.charAt(i) == 8) {
+            nummerNaarTekst = getal[8];
+        }
+        else if (telefoonnummer.charAt(i) == 9) {
+            nummerNaarTekst = getal[9];
+        }
+        document.write(nummerNaarTekst + " ");
+    }
+    </script>
+</body>
+
+</html>

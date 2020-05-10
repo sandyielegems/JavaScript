@@ -1,0 +1,33 @@
+<html lang="nl">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; 
+            charset=UTF-8">
+    <title>mijn functies</title>
+    <!--dit script: werkt met functies 
+   auteur: typ je eigen naam hier -->
+    <script src="02-mijnfunctions.js"></script>
+</head>
+
+<body>
+    <script> 
+    afmelden();
+
+    begroeten();
+    
+    document.write('<br />De dollar koers is ' + dollarKoers());
+    document.write('<br />De euro koers is ' + euroKoers());
+    document.write('<br>100 dollars is ' + dollar_naar_euro(100) + ' euros\'s'); 
+    
+    document.write('<br>wissel 100 euro\'s in dollars: ' + wissel(100,'euro')); 
+    document.write('<br>wissel 20 dollars in euro\'s: ' +  wissel(20,'dollar'));
+
+   </script>
+    <form name='form'>
+        <input type="text" name="bedrag" placeholder="bedrag" />
+        <input type="button" value="converteren" onclick="document.write('conversie in euros:' +
+    dollar_naar_euro(document.form.bedrag.value)) " />
+    </form>
+</body>
+
+</html>

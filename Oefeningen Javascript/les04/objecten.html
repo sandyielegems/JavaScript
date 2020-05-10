@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student = {
+            id:1,
+            naam:'Jozef',
+            email:'jozef@live.be',
+            opleiding:'Applicatie en media ontwikkelaar'
+        }
+        console.log('email' in student);
+
+        student.email='jozef@hotmail.com';
+
+        console.log(student.email);
+
+        var boek = {
+            titel:'JavaScript, the right way',
+            jaar: 2012,
+            publisher:'jstherightway.com'
+        }
+
+        document.write('<p>De titel is: ' + boek.titel + "</p>");
+
+        var student1={
+            id:1,
+            naam:'Jozef',
+            email:'Jozef@live.nl',
+            opleiding:'Applicatie- en media ontwikkelaar'
+        }
+
+
+        var studenten=new Array();
+        studenten.push(student1);
+        document.write(studenten[0].naam);
+
+        var test=new Array('jan','piet');
+        var plaats1 =test[0];
+
+        var laptops = new Array();
+        laptops['macbook'] ={ 
+            'model':'air',
+            'voorraad':2000,
+            'prijs':1090
+        };
+        document.write('<br />Opgave 42: laptops array aangemaakt');
+        document.write("<br>laptops: " + laptops['macbook'].model);
+        document.write('<br />Opgave 43: De laptops array heeft '+ laptops.length + ' elementen');
+        document.write('<p>Model: ' + laptops['macbook'].model)
+        </script>
+</body>
+</html>
